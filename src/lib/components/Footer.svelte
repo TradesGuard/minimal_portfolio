@@ -1,63 +1,39 @@
 <script>
-    import { Container } from '@sveltestrap/sveltestrap';
-    export let meta;
     export let personal;
-    export let contact;
+    export let meta;
 </script>
 
 <footer id="footer">
-    <Container md>
-        <div class="divider"></div>
-        <div class="content-wrapper">
-            <div class="copyright-wrapper">
-                <p>© {meta.creation_year} / 
-                    <a href={contact.github}>
-                        {personal.name}
-                    </a>
-                </p>
-            </div>
-            <div class="src-link-wrapper">
-                <a class="src-link" href={meta.src}>View Source</a>
-            </div>
-        </div>
-    </Container>
+    <div class="footer-content">
+        <nav class="footer-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
 </footer>
 
 <style>
     #footer {
-        font-size: 12px;
-        padding-bottom: 36px;
+        padding: 20px 0;
+        background-color: #1C1C1E; /* Dark background */
+        color: #f8f8f8;
+        text-align: center;
+        border-top: 1px solid #333;
+        border-radius: 10px 10px 0 0; /* Soften the footer edges */
+        width: 100%;
     }
 
-    .content-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .copyright-wrapper {
-        width: 70%;
-    }
-
-    .src-link-wrapper {
-        width: 30%;
-        text-align: right;
-    }
-
-    p {
-        font-family: JetBrainsMono-Regular;
-        margin: 0;
-    }
-
-    a {
-        font-family: JetBrainsMono-Regular;
-        color: var(--dark-grayish-blue);
+    .footer-links a {
+        color: #f8f8f8;
         text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s ease;
     }
 
-    .src-link {
-        font-family: JetBrainsMono-Regular;
-        color: var(--dark-grayish-blue);
-        text-decoration: none;
+    .footer-links a:hover {
+        color: #0070f3; /* Accent color for hover state */
     }
 </style>
+

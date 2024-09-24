@@ -4,45 +4,32 @@ const META = {
 };
 
 const PERSONAL = {
-	name: 'Wiktor Nazaruk',
-	first_name: 'Wiktor',
-	surname: 'Nazaruk',
-	role: 'Software Developer & Data Engineering student',
+	name: 'Botond Bognar',
+	first_name: 'Botond',
+	surname: 'Bognar',
+	role: 'Student, Entrepreneur ',
 	introduction:
 		'I create software that is both functional and beautiful. I have experience working with a variety of technologies, including Python, JavaScript, and SQL. I am always looking for new opportunities to learn and grow, and I am excited to see where my career will take me next.',
-	location: 'Gdańsk, Poland'
+	location: 'Budapest, Hungary'
 };
 
 const SKILLS = {
 	specializations: [
-		'Software Development',
-		'Data Engineering',
+		'Econometrics',
+		'Macroeconomics',
 		'Machine Learning',
 		'Deep Learning',
 		'Web Development'
 	],
-	programmingLanguages: ['Python', 'R', 'SQL', 'C++', 'HTML', 'CSS', 'JavaScript', 'Bash', 'HubL'],
+	programmingLanguages: [ 'R', 'Matlab', 'VBA'],
 	technologies: [
-		'PyTorch',
-		'TensorFlow',
-		'Jupyter',
-		'SQL Server',
-		'Power BI',
-		'Svelte',
-		'Sveltekit',
-		'React',
-		'Next',
-		'PHP',
-		'Node.js',
-		'Express',
-		'MongoDB',
-		'PostgreSQL',
+		'Office tools',
 		'Git'
 	]
 };
 
 const CONTACT = {
-	email: 'wiktor.nazaruk7@gmail.com',
+	email: 'botond954@gmail.com',
 	github: 'https://github.com/wiktornazaruk',
 	linkedin: 'https://www.linkedin.com/in/wiktor-nazaruk-3b610018a/'
 };
@@ -54,7 +41,7 @@ const NAVLIST = [
 
 const ABOUT = {
 	paragraphs: [
-		"Hi there, I'm Wiktor.",
+		"Hi there, I'm Botond.",
 		"I've always bounced somewhere between design and engineering, however the common thread has always been my love for building things that people love to use.",
 		"If you're interested in working together, feel free to reach out to me here:"
 	],
@@ -79,19 +66,27 @@ const ABOUT = {
 	education: [
 		{
 			id: 1,
-			school: 'Gdańsk University of Technology',
-			degree: 'Data Engineering, Bachelor of Engineering',
-			startDate: 'October 2022',
-			endDate: 'May 2026',
+			school: 'Corvinus University of Budapest',
+			degree: 'Mathematical Economics',
+			startDate: 'September 2022',
+			endDate: 'July 2027',
 			photo: { src: '/photos/pg.webp', alt: 'Logo Gdansk University of Technology' }
 		},
 		{
 			id: 2,
-			school: 'Nicolaus Copernicus High School in Gdańsk',
-			degree: 'Mathematics, Physics and Computer Science',
-			startDate: 'September 2018',
-			endDate: 'May 2021',
-			photo: { src: '/photos/ilo.webp', alt: 'Logo Nicolaus Copernicus High School' }
+			school: 'FAKT',
+			degree: 'Member',
+			startDate: '2023 april',
+			endDate: '',
+			photo: { src: '/photos/fakt.webp', alt: 'Logo Nicolaus Copernicus High School' }
+		},
+		{
+			id: 3,
+			school: 'GEM',
+			degree: 'Member',
+			startDate: '2022 september',
+			endDate: '',
+			photo: { src: '/photos/fakt.webp', alt: 'Logo Nicolaus Copernicus High School' }
 		}
 	]
 };
@@ -113,20 +108,7 @@ const PROJECTS = [
 		link: 'https://github.com/wiktornazaruk/face_recognition',
 		photo: { src: '/photos/nn.webp', alt: 'Neural Network' }
 	},
-	{
-		id: 3,
-		title: 'Autofix',
-		description: 'Car service website.',
-		link: 'https://autofix.great-site.net/index.html',
-		photo: { src: '/photos/af.webp', alt: 'Car' }
-	},
-	{
-		id: 4,
-		title: 'Urban Elegance Properties',
-		description: 'Real estate agency website, properties in Dubai extracted from API.',
-		link: 'https://real-estate-agency.vercel.app/',
-		photo: { src: '/photos/rea.webp', alt: 'Real Estate' }
-	}
+	
 ];
 
 const DATA = {

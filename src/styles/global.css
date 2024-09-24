@@ -1,55 +1,121 @@
 :root {
-    --white: #F8F9FA;
-    --black: #020617;
-    --slate-black: #1E293B;
-    --gray: #64748B;
-    --light-gray: rgb(203 213 225);
-    --dark-grayish-blue: #334155;
-
+    /* Updated Color Palette */
+    --white: #F8F8F8; /* Light neutral background */
+    --black: #1C1C1E; /* Deep dark color */
+    --slate-black: #2C2C2E; /* Dark slate gray */
+    --gray: #888888; /* Mid gray for text and accents */
+    --light-gray: #E5E5E5; /* Very light gray for borders */
+    --dark-grayish-blue: #555555; /* Dark grayish color for text */
+    --accent-color: #0070f3; /* Bright accent color (for links, hover effects) */
 }
 
 body {
-    font-family: 'Saans', 'Open Sans', sans-serif;
-    background-color: var(--white) !important;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif; /* Modern clean font */
+    background-color: var(--white);
+    color: var(--dark-grayish-blue);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 600;
+    color: var(--black); /* Ensure headers stand out */
+    margin-bottom: 16px;
 }
 
 h1 {
-    font-family: 'Saans', 'Open Sans', sans-serif;
-    font-weight: 600; /* Apply SemiBold 600 */
-    color: var(--black);
-    font-size: 36px;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
 }
 
-span, h3 {
-    color: var(--gray);
-    font-family: 'Saans', 'Open Sans', sans-serif;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 1.75rem;
 }
 
 p {
-    color: var(--dark-grayish-blue);
-    font-family: 'Saans', 'Open Sans', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    color: var(--gray);
+    margin-bottom: 20px;
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--black); /* Darker color for hover state */
+}
+
+button {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker accent color on hover */
+}
+
+/* Dividers and Borders */
 .divider {
     border-top: 1px solid var(--light-gray);
     margin-top: 36px;
     margin-bottom: 36px;
 }
 
-@font-face {
-    font-family: 'JetBrainsMono-Regular';
-    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
-    font-display: swap;
+hr {
+    border: none;
+    border-top: 1px solid var(--light-gray);
+    margin: 40px 0;
 }
 
-@font-face {
-    font-family: 'JetBrainsMono-Bold';
-    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
-    font-display: swap;
+/* Form Elements */
+input, textarea {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    color: var(--dark-grayish-blue);
 }
 
-@font-face {
-    font-family: 'Saans';
-    src: url('/fonts/saans-font.woff2') format('woff2');
-    font-display: swap;
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .layout {
+        width: 100%;
+    }
 }

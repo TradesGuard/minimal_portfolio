@@ -19,12 +19,16 @@
 
 <style>
     .layout {
-        width: 60%;
-        margin: 0 auto;
-    }
-    @media (max-width: 768px) {
-        .layout {
-            width: 90%;
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the layout takes the full viewport height */
+}
+
+.content {
+    flex: 1; /* Allow the content to take up all available space */
+}
+
+#header, #footer {
+    border-radius: 0 0 10px 10px; /* Rounded bottom edges for the header and top edges for the footer */
+}
 </style>
